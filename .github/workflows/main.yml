@@ -32,8 +32,7 @@ jobs:
       # Deploy
       - run: rsync --archive --compress --progress . ${{ env.SERVER_USER }}@${{ env.SERVER_HOST }}:${{ env.SERVER_PATH }}
 
-      - name: SSH into the server and run commands
-        
+      - name: SSH into the server and run commands        
         with:
           host: ${{ env.SERVER_HOST }}
           username: ${{ env.SERVER_USER }}
