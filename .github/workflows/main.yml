@@ -31,3 +31,11 @@ jobs:
 
       # Deploy
       - run: rsync --archive --compress --progress . ${{ env.SERVER_USER }}@${{ env.SERVER_HOST }}:${{ env.SERVER_PATH }}
+              scripts:cd ${{env.SERVER_PATH}}
+                        
+      
+      
+      
+
+          
+        
