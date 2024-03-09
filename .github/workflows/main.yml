@@ -31,11 +31,9 @@ jobs:
 
       # Deploy
       - run: rsync --archive --compress --progress . ${{ env.SERVER_USER }}@${{ env.SERVER_HOST }}:${{ env.SERVER_PATH }}
-             
-        
-          script:|
+      - run :    
             cd ${SERVER_PATH}
-            nkdir tttt
+            mkdir tttt
 
       
 
